@@ -1,0 +1,10 @@
+# PHPStorm
+/.idea/
+
+# composer
+/vendor/
+
+# Mac OSX
+.DS_Store
+.AppleDouble
+.LSOverride

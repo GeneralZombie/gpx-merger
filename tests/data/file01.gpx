@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<gpx version="1.1" creator="https://www.komoot.de" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+  <metadata>
+    <name>Slowenien, Tag 1: Über Italien nach Bohinj</name>
+    <author>
+      <link href="https://www.komoot.de">
+        <text>komoot</text>
+        <type>text/html</type>
+      </link>
+    </author>
+  </metadata>
+  <trk>
+    <name>Slowenien, Tag 1: Über Italien nach Bohinj</name>
+    <trkseg>
+      <trkpt lat="46.615534" lon="13.807062">
+        <ele>628.400247</ele>
+        <time>2021-07-04T06:24:19.128Z</time>
+      </trkpt>
+      <trkpt lat="46.615420" lon="13.806922">
+        <ele>628.400247</ele>
+        <time>2021-07-04T06:26:21.161Z</time>
+      </trkpt>
+      <trkpt lat="46.274788" lon="13.947895">
+        <ele>551.600372</ele>
+        <time>2021-07-04T16:39:02.361Z</time>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

@@ -1,0 +1,23 @@
+{
+  "name": "twohundredcouches/gpx-merger",
+  "description": "Merges multiple gpx files into one",
+  "keywords": ["gpx"],
+  "homepage": "https://github.com/twohundredcouches/gpx-merger",
+  "type": "library",
+  "license": "MIT",
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=7.4.0",
+    "ext-simplexml": "*",
+    "ext-dom": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "9.5.x-dev"
+  },
+  "autoload": {
+    "psr-4": {
+      "TwohundredCouches\\GpxMerger\\": "src/GpxMerger/",
+      "TwohundredCouches\\GpxMergerTests\\": "tests/"
+    }
+  }
+}
