@@ -50,6 +50,31 @@ class GpxMergerTest extends TestCase
         $this->assertXmlFileEqualsXmlFile(__DIR__ . '/data/expected-result.gpx', $destination);
     }
 
+    /**
+     * @dataProvider fileExtensionEnforcementProvider
+     */
+    public function testFileExtensionEnforcement($givenDestination, $expectedDestination): void
+    {
+        GpxMerger::merge(
+            [
+                __DIR__ . '/data/file01.gpx',
+                __DIR__ . '/data/file02.gpx'
+            ],
+            $givenDestination
+        );
+
+        $this->assertFileExists($expectedDestination);
+    }
+
+    public function fileExtensionEnforcementProvider(): array
+    {
+        return [
+            [self::TEMP_DIR . '/result1.gpx', self::TEMP_DIR . '/result1.gpx'],
+            [self::TEMP_DIR . '/result2', self::TEMP_DIR . '/result2.gpx'],
+            [self::TEMP_DIR . '/result3.txt', self::TEMP_DIR . '/result3.txt.gpx']
+        ];
+    }
+
     private static function removeDirectory(string $directory): void
     {
         if (!is_dir($directory)) {

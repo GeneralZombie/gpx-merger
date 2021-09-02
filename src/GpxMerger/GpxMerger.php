@@ -22,6 +22,10 @@ class GpxMerger
             $destination = sprintf('%s/%s.gpx', __DIR__, time());
         }
 
+        if (pathinfo($destination, PATHINFO_EXTENSION) !== 'gpx') {
+            $destination .= '.gpx';
+        }
+
         $dom = self::createDomDocument();
 
         $gpx = self::createGpxElement($dom);
