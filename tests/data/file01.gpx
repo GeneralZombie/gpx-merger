@@ -1,28 +1,132 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<gpx version="1.1" creator="https://www.komoot.de" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+<gpx version="1.1" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
   <metadata>
-    <name>Slowenien, Tag 1: Über Italien nach Bohinj</name>
-    <author>
-      <link href="https://www.komoot.de">
-        <text>komoot</text>
-        <type>text/html</type>
-      </link>
-    </author>
+    <name>Test File 01</name>
   </metadata>
+  <wpt lat="46.000" lon="14.000">
+      <ele>0.0</ele>
+      <time>2021-01-01T00:00:00.000Z</time>
+  </wpt>
+  <wpt lat="46.000" lon="14.000">
+      <ele>0.0</ele>
+      <time>2021-01-01T00:01:00.000Z</time>
+  </wpt>
+  <wpt lat="46.000" lon="14.000">
+      <ele>0.0</ele>
+      <time>2021-01-01T00:02:00.000Z</time>
+  </wpt>
+  <wpt lat="46.000" lon="14.000">
+      <ele>0.0</ele>
+      <time>2021-01-01T00:03:00.000Z</time>
+  </wpt>
+  <wpt lat="46.000" lon="14.000">
+      <ele>0.0</ele>
+      <time>2021-01-01T00:04:00.000Z</time>
+  </wpt>
+  <wpt lat="46.000" lon="14.000">
+      <ele>0.0</ele>
+      <time>2021-01-01T00:05:00.000Z</time>
+  </wpt>
+  <wpt lat="46.000" lon="14.000">
+      <ele>0.0</ele>
+      <time>2021-01-01T00:06:00.000Z</time>
+  </wpt>
+  <wpt lat="46.000" lon="14.000">
+      <ele>0.0</ele>
+      <time>2021-01-01T00:07:00.000Z</time>
+  </wpt>
+  <wpt lat="46.000" lon="14.000">
+      <ele>0.0</ele>
+      <time>2021-01-01T00:08:00.000Z</time>
+  </wpt>
+  <wpt lat="46.000" lon="14.000">
+      <ele>0.0</ele>
+      <time>2021-01-01T00:09:00.000Z</time>
+  </wpt>
+  <rte>
+    <rtept lat="46.000" lon="14.000">
+        <ele>0.0</ele>
+        <time>2021-01-01T00:00:00.000Z</time>
+    </rtept>
+    <rtept lat="46.000" lon="14.000">
+        <ele>0.0</ele>
+        <time>2021-01-01T00:01:00.000Z</time>
+    </rtept>
+    <rtept lat="46.000" lon="14.000">
+        <ele>0.0</ele>
+        <time>2021-01-01T00:02:00.000Z</time>
+    </rtept>
+    <rtept lat="46.000" lon="14.000">
+        <ele>0.0</ele>
+        <time>2021-01-01T00:03:00.000Z</time>
+    </rtept>
+    <rtept lat="46.000" lon="14.000">
+        <ele>0.0</ele>
+        <time>2021-01-01T00:04:00.000Z</time>
+    </rtept>
+    <rtept lat="46.000" lon="14.000">
+        <ele>0.0</ele>
+        <time>2021-01-01T00:05:00.000Z</time>
+    </rtept>
+    <rtept lat="46.000" lon="14.000">
+        <ele>0.0</ele>
+        <time>2021-01-01T00:06:00.000Z</time>
+    </rtept>
+    <rtept lat="46.000" lon="14.000">
+        <ele>0.0</ele>
+        <time>2021-01-01T00:07:00.000Z</time>
+    </rtept>
+    <rtept lat="46.000" lon="14.000">
+        <ele>0.0</ele>
+        <time>2021-01-01T00:08:00.000Z</time>
+    </rtept>
+    <rtept lat="46.000" lon="14.000">
+        <ele>0.0</ele>
+        <time>2021-01-01T00:09:00.000Z</time>
+    </rtept>
+  </rte>
   <trk>
-    <name>Slowenien, Tag 1: Über Italien nach Bohinj</name>
+    <name>Test Track 01</name>
     <trkseg>
-      <trkpt lat="46.615534" lon="13.807062">
-        <ele>628.400247</ele>
-        <time>2021-07-04T06:24:19.128Z</time>
+      <trkpt lat="46.000" lon="14.000">
+        <ele>0.0</ele>
+        <time>2021-01-01T00:00:00.000Z</time>
       </trkpt>
-      <trkpt lat="46.615420" lon="13.806922">
-        <ele>628.400247</ele>
-        <time>2021-07-04T06:26:21.161Z</time>
+      <trkpt lat="46.000" lon="14.000">
+        <ele>0.0</ele>
+        <time>2021-01-01T00:01:00.000Z</time>
       </trkpt>
-      <trkpt lat="46.274788" lon="13.947895">
-        <ele>551.600372</ele>
-        <time>2021-07-04T16:39:02.361Z</time>
+      <trkpt lat="46.000" lon="14.000">
+        <ele>0.0</ele>
+        <time>2021-01-01T00:02:00.000Z</time>
+      </trkpt>
+      <trkpt lat="46.000" lon="14.000">
+        <ele>0.0</ele>
+        <time>2021-01-01T00:03:00.000Z</time>
+      </trkpt>
+      <trkpt lat="46.000" lon="14.000">
+        <ele>0.0</ele>
+        <time>2021-01-01T00:04:00.000Z</time>
+      </trkpt>
+      <trkpt lat="46.000" lon="14.000">
+        <ele>0.0</ele>
+        <time>2021-01-01T00:05:00.000Z</time>
+      </trkpt>
+      <trkpt lat="46.000" lon="14.000">
+        <ele>0.0</ele>
+        <time>2021-01-01T00:06:00.000Z</time>
+      </trkpt>
+      <trkpt lat="46.000" lon="14.000">
+        <ele>0.0</ele>
+        <time>2021-01-01T00:07:00.000Z</time>
+      </trkpt>
+      <trkpt lat="46.000" lon="14.000">
+        <ele>0.0</ele>
+        <time>2021-01-01T00:08:00.000Z</time>
+      </trkpt>
+      <trkpt lat="46.000" lon="14.000">
+        <ele>0.0</ele>
+        <time>2021-01-01T00:09:00.000Z</time>
       </trkpt>
     </trkseg>
   </trk>

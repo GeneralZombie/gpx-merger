@@ -47,7 +47,40 @@ class GpxMergerTest extends TestCase
 
         $this->assertFileExists($destination);
 
-        $this->assertXmlFileEqualsXmlFile(__DIR__ . '/data/expected-result.gpx', $destination);
+        $this->assertXmlFileEqualsXmlFile(__DIR__ . '/data/expected-result-0-compression.gpx', $destination);
+    }
+
+    /**
+     * @dataProvider compressionProvider
+     */
+    public function testCompression($compression, $expectedResult): void
+    {
+        $destination = self::TEMP_DIR . $expectedResult;
+
+        GpxMerger::merge(
+            [
+                __DIR__ . '/data/file01.gpx',
+                __DIR__ . '/data/file02.gpx'
+            ],
+            $destination,
+            GpxMetaData::create('Test', 'This is a test', 'Jane Doe'),
+            $compression
+        );
+
+        $this->assertFileExists($destination);
+
+        $this->assertXmlFileEqualsXmlFile(__DIR__ . '/data/' . $expectedResult, $destination);
+    }
+
+    public function compressionProvider(): array
+    {
+        return [
+            [0.0, 'expected-result-0-compression.gpx'],
+            [0.25, 'expected-result-25-compression.gpx'],
+            [0.5, 'expected-result-50-compression.gpx'],
+            [0.75, 'expected-result-75-compression.gpx'],
+            [1.0, 'expected-result-100-compression.gpx'],
+        ];
     }
 
     /**

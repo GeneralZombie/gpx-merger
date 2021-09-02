@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<gpx version="1.1" creator="twohundredcouches/gpx-merger" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+  <metadata>
+    <name>Test</name>
+    <desc>This is a test</desc>
+    <author>
+      <name>Test</name>
+    </author>
+  </metadata>
+  <wpt xmlns="http://www.topografix.com/GPX/1/1" lat="46.000" lon="14.000">
+    <ele>0.0</ele>
+    <time>2021-01-01T00:00:00.000Z</time>
+  </wpt>
+  <wpt xmlns="http://www.topografix.com/GPX/1/1" lat="46.000" lon="14.000">
+    <ele>0.0</ele>
+    <time>2021-01-01T00:01:00.000Z</time>
+  </wpt>
+  <wpt xmlns="http://www.topografix.com/GPX/1/1" lat="46.000" lon="14.000">
+    <ele>0.0</ele>
+    <time>2021-01-01T00:03:00.000Z</time>
+  </wpt>
+  <wpt xmlns="http://www.topografix.com/GPX/1/1" lat="46.000" lon="14.000">
+    <ele>0.0</ele>
+    <time>2021-01-01T00:05:00.000Z</time>
+  </wpt>
+  <wpt xmlns="http://www.topografix.com/GPX/1/1" lat="46.000" lon="14.000">
+    <ele>0.0</ele>
+    <time>2021-01-01T00:07:00.000Z</time>
+  </wpt>
+  <wpt xmlns="http://www.topografix.com/GPX/1/1" lat="46.000" lon="14.000">
+    <ele>0.0</ele>
+    <time>2021-01-01T00:09:00.000Z</time>
+  </wpt>
+  <rte xmlns="http://www.topografix.com/GPX/1/1">
+    <rtept lat="46.000" lon="14.000">
+      <ele>0.0</ele>
+      <time>2021-01-01T00:00:00.000Z</time>
+    </rtept>
+    <rtept lat="46.000" lon="14.000">
+      <ele>0.0</ele>
+      <time>2021-01-01T00:01:00.000Z</time>
+    </rtept>
+    <rtept lat="46.000" lon="14.000">
+      <ele>0.0</ele>
+      <time>2021-01-01T00:03:00.000Z</time>
+    </rtept>
+    <rtept lat="46.000" lon="14.000">
+      <ele>0.0</ele>
+      <time>2021-01-01T00:05:00.000Z</time>
+    </rtept>
+    <rtept lat="46.000" lon="14.000">
+      <ele>0.0</ele>
+      <time>2021-01-01T00:07:00.000Z</time>
+    </rtept>
+    <rtept lat="46.000" lon="14.000">
+      <ele>0.0</ele>
+      <time>2021-01-01T00:09:00.000Z</time>
+    </rtept>
+  </rte>
+  <trk xmlns="http://www.topografix.com/GPX/1/1">
+    <name>Test Track 01</name>
+    <trkseg>
+      <trkpt lat="46.000" lon="14.000">
+        <ele>0.0</ele>
+        <time>2021-01-01T00:00:00.000Z</time>
+      </trkpt>
+      <trkpt lat="46.000" lon="14.000">
+        <ele>0.0</ele>
+        <time>2021-01-01T00:01:00.000Z</time>
+      </trkpt>
+      <trkpt lat="46.000" lon="14.000">
+        <ele>0.0</ele>
+        <time>2021-01-01T00:03:00.000Z</time>
+      </trkpt>
+      <trkpt lat="46.000" lon="14.000">
+        <ele>0.0</ele>
+        <time>2021-01-01T00:05:00.000Z</time>
+      </trkpt>
+      <trkpt lat="46.000" lon="14.000">
+        <ele>0.0</ele>
+        <time>2021-01-01T00:07:00.000Z</time>
+      </trkpt>
+      <trkpt lat="46.000" lon="14.000">
+        <ele>0.0</ele>
+        <time>2021-01-01T00:09:00.000Z</time>
+      </trkpt>
+    </trkseg>
+  </trk>
+  <wpt xmlns="http://www.topografix.com/GPX/1/1" lat="46.000" lon="14.000">
+    <ele>0.0</ele>
+    <time>2021-01-02T00:00:00.000Z</time>
+  </wpt>
+  <wpt xmlns="http://www.topografix.com/GPX/1/1" lat="46.000" lon="14.000">
+    <ele>0.0</ele>
+    <time>2021-01-02T00:01:00.000Z</time>
+  </wpt>
+  <wpt xmlns="http://www.topografix.com/GPX/1/1" lat="46.000" lon="14.000">
+    <ele>0.0</ele>
+    <time>2021-01-02T00:03:00.000Z</time>
+  </wpt>
+  <wpt xmlns="http://www.topografix.com/GPX/1/1" lat="46.000" lon="14.000">
+    <ele>0.0</ele>
+    <time>2021-01-02T00:05:00.000Z</time>
+  </wpt>
+  <wpt xmlns="http://www.topografix.com/GPX/1/1" lat="46.000" lon="14.000">
+    <ele>0.0</ele>
+    <time>2021-01-02T00:07:00.000Z</time>
+  </wpt>
+  <wpt xmlns="http://www.topografix.com/GPX/1/1" lat="46.000" lon="14.000">
+    <ele>0.0</ele>
+    <time>2021-01-02T00:09:00.000Z</time>
+  </wpt>
+  <rte xmlns="http://www.topografix.com/GPX/1/1">
+    <rtept lat="46.000" lon="14.000">
+      <ele>0.0</ele>
+      <time>2021-01-02T00:00:00.000Z</time>
+    </rtept>
+    <rtept lat="46.000" lon="14.000">
+      <ele>0.0</ele>
+      <time>2021-01-02T00:01:00.000Z</time>
+    </rtept>
+    <rtept lat="46.000" lon="14.000">
+      <ele>0.0</ele>
+      <time>2021-01-02T00:03:00.000Z</time>
+    </rtept>
+    <rtept lat="46.000" lon="14.000">
+      <ele>0.0</ele>
+      <time>2021-01-02T00:05:00.000Z</time>
+    </rtept>
+    <rtept lat="46.000" lon="14.000">
+      <ele>0.0</ele>
+      <time>2021-01-02T00:07:00.000Z</time>
+    </rtept>
+    <rtept lat="46.000" lon="14.000">
+      <ele>0.0</ele>
+      <time>2021-01-02T00:09:00.000Z</time>
+    </rtept>
+  </rte>
+  <trk xmlns="http://www.topografix.com/GPX/1/1">
+    <name>Test Track 02</name>
+    <trkseg>
+      <trkpt lat="46.000" lon="14.000">
+        <ele>0.0</ele>
+        <time>2021-01-02T00:00:00.000Z</time>
+      </trkpt>
+      <trkpt lat="46.000" lon="14.000">
+        <ele>0.0</ele>
+        <time>2021-01-02T00:01:00.000Z</time>
+      </trkpt>
+      <trkpt lat="46.000" lon="14.000">
+        <ele>0.0</ele>
+        <time>2021-01-02T00:03:00.000Z</time>
+      </trkpt>
+      <trkpt lat="46.000" lon="14.000">
+        <ele>0.0</ele>
+        <time>2021-01-02T00:05:00.000Z</time>
+      </trkpt>
+      <trkpt lat="46.000" lon="14.000">
+        <ele>0.0</ele>
+        <time>2021-01-02T00:07:00.000Z</time>
+      </trkpt>
+      <trkpt lat="46.000" lon="14.000">
+        <ele>0.0</ele>
+        <time>2021-01-02T00:09:00.000Z</time>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

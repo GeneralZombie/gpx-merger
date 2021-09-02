@@ -27,7 +27,9 @@ $optionalMetaData = GpxMetaData::create(
     'Jane Doe'
 );
 
-GpxMerger::merge($filesToMerge, $destination, $optionalMetaData);
+$compression = 0.0;
+
+GpxMerger::merge($filesToMerge, $destination, $optionalMetaData, $compression);
 ```
 
 ## Classes
@@ -36,7 +38,7 @@ GpxMerger::merge($filesToMerge, $destination, $optionalMetaData);
 
 Main class of this package. Provides a static merge function.
 
-##### `merge(array $files, ?string $destination = null, GpxMetaData $metaData = null): string`
+##### `merge(array $files, ?string $destination = null, GpxMetaData $metaData = null, float $compression = 0.0): string`
 
 *Return:* `string` 
 
@@ -44,6 +46,10 @@ Main class of this package. Provides a static merge function.
 
 Merges the provided array of `.gpx` files into a single file, that can be defined with `$destination`.
 If a GpxMetaData object is provided the given metadata will be added to that file.
+For compression you can pass a float value between 0 (no compression) and 1 (maximum compression).
+Compression means that waypoint, route and track nodes get removed from the gpx file. A compression value of 1.0 means
+that every node, except for the first and last one, which are always preserved, will be removed. A compression value of 
+0.5 means that 50% of the nodes will be removed and 0.0 that there will be no nodes removed at all (this is the default).
 Returns the path of the output file. 
 
 ### `GpxMetaData`

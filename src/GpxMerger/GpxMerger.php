@@ -13,10 +13,19 @@ class GpxMerger
      * @param array<string> $files The filepaths to merge.
      * @param string|null $destination The output filepath.
      * @param GpxMetaData|null $metaData Optional object with meta data which will be added to the output file.
+     * @param float|null $compression   Optional compression. Use a value between 0.0 and 1.0.
+     *                                  0.0 = no compression,
+     *                                  0.5 = 50% compression (removes half of the nodes in each file),
+     *                                  1.0 = maximum compression (keeps only first and last node in each file)
      * @return string
      * @throws GpxMergerException
      */
-    public static function merge(array $files, ?string $destination = null, GpxMetaData $metaData = null): string
+    public static function merge(
+        array $files,
+        ?string $destination = null,
+        GpxMetaData $metaData = null,
+        float $compression = 0.0
+    ): string
     {
         if (!$destination) {
             $destination = sprintf('%s/%s.gpx', __DIR__, time());
@@ -26,13 +35,16 @@ class GpxMerger
             $destination .= '.gpx';
         }
 
+        // normalize $compression betweeen 0.0 and 1.0
+        $compression = max(0.0, min(1.0, $compression));
+
         $dom = self::createDomDocument();
 
         $gpx = self::createGpxElement($dom);
 
         $gpx = self::addMetaData($dom, $gpx, $metaData);
 
-        $gpx = self::appendFiles($dom, $gpx, $files);
+        $gpx = self::appendFiles($dom, $gpx, $files, $compression);
 
         $saved = self::save($dom, $gpx, $destination);
 
@@ -103,7 +115,12 @@ class GpxMerger
         return $gpx;
     }
 
-    protected static function appendFiles(\DOMDocument $dom, \DOMElement $gpx, array $files): \DOMElement
+    protected static function appendFiles(
+        \DOMDocument $dom,
+        \DOMElement $gpx,
+        array $files,
+        float $compression
+    ): \DOMElement
     {
         foreach ($files as $file) {
             if (!file_exists($file)) {
@@ -115,22 +132,70 @@ class GpxMerger
             }
 
             $xmlFile = new \DOMDocument();
+            $xmlFile->preserveWhiteSpace = false;
             $xmlFile->load($file);
 
-            foreach ($xmlFile->getElementsByTagName('wpt') as $waypoint) {
+            $waypoints = $xmlFile->getElementsByTagName('wpt');
+            if ($compression > 0) {
+                self::compress($waypoints, $compression);
+            }
+
+            foreach ($waypoints as $waypoint) {
                 $gpx->appendChild($dom->importNode($waypoint, true));
             }
 
             foreach ($xmlFile->getElementsByTagName('rte') as $route) {
+                if ($compression > 0) {
+                    self::compress($route->getElementsByTagName('rtept'), $compression);
+                }
+
                 $gpx->appendChild($dom->importNode($route, true));
             }
 
             foreach ($xmlFile->getElementsByTagName('trk') as $track) {
+                if ($compression > 0) {
+                    self::compress($track->getElementsByTagName('trkpt'), $compression);
+                }
+
                 $gpx->appendChild($dom->importNode($track, true));
             }
         }
 
         return $gpx;
+    }
+
+    protected static function compress(\DOMNodeList $nodeList, float $compression): \DOMNodeList
+    {
+        $nodeListCount = $nodeList->count();
+
+        // remove evey x nodes
+        $compressionStep = 1.0 / $compression;
+
+        // first node to be removed has to reach this index
+        $nextIndexToRemove = $compressionStep;
+
+        // we have to track the number of removed items, because we have to account for the shortened array after we removed an item
+        $removedCount = 0;
+
+        for ($i = 0; $i < $nodeListCount; $i++) {
+
+            // Keep first and last node no matter what
+            if ($i === 0 || $i === $nodeListCount - 1) {
+                continue;
+            }
+
+            if ($i >= $nextIndexToRemove) {
+                // remove node
+                $node = $nodeList->item($i - $removedCount);
+                $node->parentNode->removeChild($node);
+
+                // update next index to remove and removed count
+                $nextIndexToRemove += $compressionStep;
+                $removedCount ++;
+            }
+        }
+
+        return $nodeList;
     }
 
     protected static function save(\DOMDocument $dom, \DOMElement $gpx, string $filePath): bool

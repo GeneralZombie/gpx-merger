@@ -1,28 +1,132 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<gpx version="1.1" creator="https://www.komoot.de" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+<gpx version="1.1" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
   <metadata>
-    <name>Slowenien, Tag 2: Vom Wasserfall zum Soča-Kanal</name>
-    <author>
-      <link href="https://www.komoot.de">
-        <text>komoot</text>
-        <type>text/html</type>
-      </link>
-    </author>
+    <name>Test File 02</name>
   </metadata>
+  <wpt lat="46.000" lon="14.000">
+      <ele>0.0</ele>
+      <time>2021-01-02T00:00:00.000Z</time>
+  </wpt>
+  <wpt lat="46.000" lon="14.000">
+      <ele>0.0</ele>
+      <time>2021-01-02T00:01:00.000Z</time>
+  </wpt>
+  <wpt lat="46.000" lon="14.000">
+      <ele>0.0</ele>
+      <time>2021-01-02T00:02:00.000Z</time>
+  </wpt>
+  <wpt lat="46.000" lon="14.000">
+      <ele>0.0</ele>
+      <time>2021-01-02T00:03:00.000Z</time>
+  </wpt>
+  <wpt lat="46.000" lon="14.000">
+      <ele>0.0</ele>
+      <time>2021-01-02T00:04:00.000Z</time>
+  </wpt>
+  <wpt lat="46.000" lon="14.000">
+      <ele>0.0</ele>
+      <time>2021-01-02T00:05:00.000Z</time>
+  </wpt>
+  <wpt lat="46.000" lon="14.000">
+      <ele>0.0</ele>
+      <time>2021-01-02T00:06:00.000Z</time>
+  </wpt>
+  <wpt lat="46.000" lon="14.000">
+      <ele>0.0</ele>
+      <time>2021-01-02T00:07:00.000Z</time>
+  </wpt>
+  <wpt lat="46.000" lon="14.000">
+      <ele>0.0</ele>
+      <time>2021-01-02T00:08:00.000Z</time>
+  </wpt>
+  <wpt lat="46.000" lon="14.000">
+      <ele>0.0</ele>
+      <time>2021-01-02T00:09:00.000Z</time>
+  </wpt>
+  <rte>
+    <rtept lat="46.000" lon="14.000">
+        <ele>0.0</ele>
+        <time>2021-01-02T00:00:00.000Z</time>
+    </rtept>
+    <rtept lat="46.000" lon="14.000">
+        <ele>0.0</ele>
+        <time>2021-01-02T00:01:00.000Z</time>
+    </rtept>
+    <rtept lat="46.000" lon="14.000">
+        <ele>0.0</ele>
+        <time>2021-01-02T00:02:00.000Z</time>
+    </rtept>
+    <rtept lat="46.000" lon="14.000">
+        <ele>0.0</ele>
+        <time>2021-01-02T00:03:00.000Z</time>
+    </rtept>
+    <rtept lat="46.000" lon="14.000">
+        <ele>0.0</ele>
+        <time>2021-01-02T00:04:00.000Z</time>
+    </rtept>
+    <rtept lat="46.000" lon="14.000">
+        <ele>0.0</ele>
+        <time>2021-01-02T00:05:00.000Z</time>
+    </rtept>
+    <rtept lat="46.000" lon="14.000">
+        <ele>0.0</ele>
+        <time>2021-01-02T00:06:00.000Z</time>
+    </rtept>
+    <rtept lat="46.000" lon="14.000">
+        <ele>0.0</ele>
+        <time>2021-01-02T00:07:00.000Z</time>
+    </rtept>
+    <rtept lat="46.000" lon="14.000">
+        <ele>0.0</ele>
+        <time>2021-01-02T00:08:00.000Z</time>
+    </rtept>
+    <rtept lat="46.000" lon="14.000">
+        <ele>0.0</ele>
+        <time>2021-01-02T00:09:00.000Z</time>
+    </rtept>
+  </rte>
   <trk>
-    <name>Slowenien, Tag 2: Vom Wasserfall zum Soča-Kanal</name>
+    <name>Test Track 02</name>
     <trkseg>
-      <trkpt lat="46.274615" lon="13.947705">
-        <ele>560.683434</ele>
-        <time>2021-07-05T05:48:36.434Z</time>
+      <trkpt lat="46.000" lon="14.000">
+        <ele>0.0</ele>
+        <time>2021-01-02T00:00:00.000Z</time>
       </trkpt>
-      <trkpt lat="46.274518" lon="13.947718">
-        <ele>560.683434</ele>
-        <time>2021-07-05T05:49:14.327Z</time>
+      <trkpt lat="46.000" lon="14.000">
+        <ele>0.0</ele>
+        <time>2021-01-02T00:01:00.000Z</time>
       </trkpt>
-      <trkpt lat="46.160598" lon="13.742058">
-        <ele>191.510768</ele>
-        <time>2021-07-05T16:37:18.856Z</time>
+      <trkpt lat="46.000" lon="14.000">
+        <ele>0.0</ele>
+        <time>2021-01-02T00:02:00.000Z</time>
+      </trkpt>
+      <trkpt lat="46.000" lon="14.000">
+        <ele>0.0</ele>
+        <time>2021-01-02T00:03:00.000Z</time>
+      </trkpt>
+      <trkpt lat="46.000" lon="14.000">
+        <ele>0.0</ele>
+        <time>2021-01-02T00:04:00.000Z</time>
+      </trkpt>
+      <trkpt lat="46.000" lon="14.000">
+        <ele>0.0</ele>
+        <time>2021-01-02T00:05:00.000Z</time>
+      </trkpt>
+      <trkpt lat="46.000" lon="14.000">
+        <ele>0.0</ele>
+        <time>2021-01-02T00:06:00.000Z</time>
+      </trkpt>
+      <trkpt lat="46.000" lon="14.000">
+        <ele>0.0</ele>
+        <time>2021-01-02T00:07:00.000Z</time>
+      </trkpt>
+      <trkpt lat="46.000" lon="14.000">
+        <ele>0.0</ele>
+        <time>2021-01-02T00:08:00.000Z</time>
+      </trkpt>
+      <trkpt lat="46.000" lon="14.000">
+        <ele>0.0</ele>
+        <time>2021-01-02T00:09:00.000Z</time>
       </trkpt>
     </trkseg>
   </trk>
